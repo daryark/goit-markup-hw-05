@@ -208,7 +208,9 @@ address {
 .text {
 	margin-bottom: 0;
 	margin-top: 0;
+
 	letter-spacing: var(--letter-spacing);
+
 	color: var(--second-color);
 }
 .features .text,
@@ -230,6 +232,7 @@ address {
 	content: "";
 	position: absolute;
 	bottom: 0;
+
 	width: 100%;
 	height: 70px;
 
@@ -249,12 +252,14 @@ address {
 }
 /* .thumb-content {
 	position: absolute;
+	bottom: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	bottom: 0;
+
 	width: 100%;
 	height: 70px;
+
 	background-color: rgba(47, 48, 58, 0.8);
 }
 .services .thumb-text {
@@ -262,6 +267,7 @@ address {
 	font-size: 14px;
 	line-height: var(--line-height-auto);
 	letter-spacing: var(--letter-spacing);
+
 	color: var(--white-color-colorbg);
 } */
 .block-title {
@@ -278,6 +284,7 @@ address {
 }
 .team .card {
 	background-color: var(--white-color-colorbg);
+
 	border-radius: 0 0 4px 4px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -291,6 +298,7 @@ address {
 .team .title,
 .filter {
 	display: block;
+
 	font-weight: 500;
 }
 .team .title,
@@ -303,7 +311,6 @@ address {
 }
 .team .text {
 	margin-bottom: 16px;
-
 	text-align: center;
 }
 /* C: Clients section */
@@ -347,6 +354,7 @@ address {
 	width: 44px;
 
 	background-color: rgba(255, 255, 255, 0.1);
+
 	border-radius: 50%;
 }
 .socials a,
@@ -354,6 +362,7 @@ address {
 .contacts a {
 	display: inline-flex;
 	align-items: center;
+
 	color: var(--icon-color);
 }
 .address-info .item:not(:last-child) {
@@ -377,6 +386,7 @@ address {
 	line-height: 1.63;
 
 	background-color: var(--grey-background);
+
 	border-style: none;
 }
 .portfolio {
@@ -396,6 +406,7 @@ address {
 	content: "";
 	position: absolute;
 	top: 0;
+
 	width: 100%;
 	height: 100%;
 
@@ -406,13 +417,13 @@ address {
 	top: 0;
 	left: 0;
 	margin: 0;
+	padding: 63px 24px;
 
 	font-size: 18px;
 	line-height: 1.56;
 	letter-spacing: var(--letter-spacing);
 
 	color: var(--white-color-colorbg);
-	padding: 63px 24px;
 }
 .portfolio .content {
 	padding: 20px 24px;
@@ -472,4 +483,29 @@ address {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 	color: initial;
+}
+/* C: Modal */
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	background-color: rgba(10, 10, 10, 0.9);
+}
+/* .backdrop.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+} */
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	min-width: 500px;
+	min-height: 300px;
+
+	background-color: rgb(187, 187, 187);
 }
