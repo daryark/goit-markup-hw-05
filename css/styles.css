@@ -125,6 +125,9 @@ address {
 .header .contacts {
 	margin-left: auto;
 }
+.contacts a {
+	color: var(--second-color);
+}
 .contacts .icon {
 	margin-right: 10px;
 	fill: currentColor;
@@ -350,7 +353,9 @@ address {
 .contacts a {
 	display: inline-flex;
 	align-items: center;
-
+}
+.socials a,
+.clients a {
 	color: var(--icon-color);
 }
 .address-info .item:not(:last-child) {
