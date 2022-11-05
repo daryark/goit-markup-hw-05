@@ -125,7 +125,7 @@ address {
 .header .contacts {
 	margin-left: auto;
 }
-.contacts a {
+.header .contacts a {
 	color: var(--second-color);
 }
 .contacts .icon {
@@ -134,7 +134,8 @@ address {
 }
 /*C: Hero section */
 .hero-section > .section {
-	padding: 200px;
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 .hero-section {
 	max-width: 1600px;
@@ -160,7 +161,7 @@ address {
 }
 .hero,
 .address-info > :first-child,
-.link.real-address,
+.footer .link.real-address,
 .footer .title {
 	color: var(--white-color-colorbg);
 }
@@ -316,7 +317,7 @@ address {
 	border-radius: 4px;
 	border: 1px solid var(--icon-color);
 
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients .icon,
 .socials .icon {
@@ -348,6 +349,9 @@ address {
 	border-radius: 50%;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.socials-footer .item {
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .socials a,
 .clients a,
 .contacts a {
@@ -361,7 +365,7 @@ address {
 .address-info .item:not(:last-child) {
 	margin-bottom: 9px;
 }
-.footer .link + .link {
+.footer .link {
 	color: rgba(255, 255, 255, 0.6);
 }
 /*C: Portfolio page */
@@ -381,7 +385,8 @@ address {
 	background-color: var(--grey-background);
 
 	border-style: none;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio {
 	display: flex;
@@ -398,6 +403,7 @@ address {
 }
 .portfolio .link {
 	display: block;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio .thumb-content {
 	position: absolute;
@@ -472,7 +478,7 @@ address {
 
 	color: initial;
 }
-.portfolio .thumb:hover .thumb-content {
+.portfolio .link:hover .thumb-content {
 	transform: translateY(0);
 }
 /* C: Modal */
