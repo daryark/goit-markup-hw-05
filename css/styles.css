@@ -448,6 +448,10 @@ address {
 .link.active,
 .link:hover,
 .link:focus,
+.footer .link:hover,
+.footer .link:focus,
+.header .link:hover,
+.header .link:focus,
 .clients .link:hover .icon,
 .clients .link:focus .icon {
 	color: var(--accent-color);
