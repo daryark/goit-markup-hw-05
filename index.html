@@ -44,8 +44,8 @@
 			</div>
 		</header>
 		<main>
-			<section class="hero-section">
-				<div class="container section">
+			<section class="hero-section section">
+				<div class="container">
 					<h1 class="hero uppercase">Ефективні рішення для вашого бізнесу</h1>
 					<button type="button" class="action-button" data-open-modal>Замовити послугу</button>
 				</div>
@@ -290,7 +290,7 @@
 					</address>
 				</div>
 				<div class="socials-footer">
-					<h3 class="title uppercase">Приєднуйтесь</h3>
+					<p class="title uppercase">Приєднуйтесь</p>
 					<ul class="socials">
 						<li class="item">
 							<a class="link" href="" aria-label="instagram">
@@ -325,20 +325,6 @@
 				</button>
 			</div>
 		</div>
-		<script>
-			const refs = {
-				openModalBtn: document.querySelector("[data-open-modal]"),
-				closeModalBtn: document.querySelector("[data-close-modal]"),
-				backdrop: document.querySelector("[data-backdrop]"),
-			};
-
-			refs.openModalBtn.addEventListener("click", toggleModal);
-			refs.closeModalBtn.addEventListener("click", toggleModal);
-			refs.backdrop.addEventListener("click", logBckdropClick);
-
-			function toggleModal() {
-				refs.backdrop.classList.toggle("is-hidden");
-			}
-		</script>
+		<script src="js/modal.js"></script>
 	</body>
 </html>
