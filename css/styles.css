@@ -382,12 +382,6 @@ address {
 .footer .link {
 	color: rgba(255, 255, 255, 0.6);
 }
-/* C: Form */
-form button {
-	padding: 10px 28px;
-	margin-left: 12px;
-}
-
 /*C: Portfolio page */
 .filters-list {
 	display: flex;
